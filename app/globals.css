@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* ==========================================
+     COLOR PALETTE: Super Premium Warm Javanese
+     ========================================== */
+  --color-warm-brown: #5C3D2E; /* Lebih gelap & kaya */
+  --color-soft-caramel: #E0A96D; /* Lebih berkilau */
+  --color-warm-cream: #F9F5F0; /* Lebih soft/krem susu */
+  --color-leaf-green: #3A5A40; /* Hijau hutan yang dalam */
+  
+  --color-text-primary: #1A1A1A; /* Hampir hitam, lebih tajam */
+  --color-text-secondary: #8C8C8C;
+  --color-error-red: #B34040;
+  --color-success-green: #3A5A40;
+
+  /* ==========================================
+     BORDER RADIUS: Organic & Smooth
+     ========================================== */
+  --radius-card: 28px;
+  --radius-button: 16px;
+  --radius-pill: 9999px;
+
+  /* ==========================================
+     BOX SHADOW: Premium Depth & Glow
+     ========================================== */
+  --shadow-soft: 0 4px 20px rgba(92, 61, 46, 0.06);
+  --shadow-card: 0 10px 40px -10px rgba(92, 61, 46, 0.12);
+  --shadow-float: 0 20px 50px -12px rgba(92, 61, 46, 0.25);
+}
+
+/* Base styling */
+body {
+  background-color: var(--color-warm-cream);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for Premium Feel */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(92, 61, 46, 0.2); border-radius: 9999px; }
