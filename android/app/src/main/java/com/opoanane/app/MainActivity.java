@@ -1,4 +1,4 @@
-package com.restoranx.app;
+package com.opoanane.app;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -162,7 +162,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4">
             {menus.map((menu) => (
               <div key={menu.id} className="bg-white rounded-card shadow-soft overflow-hidden flex flex-col group">
-                <Link href={`/detail/${menu.id}`} className="block">
+                <Link href={`/detail?id=${menu.id}`} className="block">
                   <div className="relative w-full h-32 bg-warm-cream overflow-hidden">
                     <Image
                       src={getValidImageUrl(menu?.image)}

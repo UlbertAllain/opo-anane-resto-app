@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // HAPUS output: 'export' dulu sampai Fase 5 (Build APK)
+  output: 'export', // WAJIB: Untuk jadiin APK
+  trailingSlash: true, // WAJIB: Biar routing di HP nggak 404
   images: {
-    unoptimized: true, // Ini biar gambar dari Supabase/Unsplash bisa muncul di Capacitor nanti
+    unoptimized: true, // WAJIB: Image optimization Next.js tidak jalan di local file
     remotePatterns: [
       {
         protocol: 'https',
@@ -10,7 +11,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'your-project-id.supabase.co', // Ganti dengan domain Supabase Anda
+        hostname: 'bxljmxqnjqeuuafuppur.supabase.co', // Ganti dengan domain Supabase Anda
       },
     ],
   },

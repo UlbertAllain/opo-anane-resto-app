@@ -118,7 +118,7 @@ export default function FullMenuPage() {
           ) : (
             filteredMenus.map((menu) => (
               <div key={menu.id} className="bg-white rounded-card shadow-soft overflow-hidden flex group">
-                <Link href={`/detail/${menu.id}`} className="relative w-28 h-28 bg-warm-cream overflow-hidden flex-shrink-0">
+                <Link href={`/detail?id=${menu.id}`} className="relative w-28 h-28 bg-warm-cream overflow-hidden flex-shrink-0">
                   <Image
                     src={getValidImageUrl(menu?.image)}
                     alt={menu?.name || "Menu"}
@@ -128,7 +128,7 @@ export default function FullMenuPage() {
                   />
                 </Link>
                 <div className="p-3 flex-1 flex flex-col justify-between min-w-0">
-                  <Link href={`/detail/${menu.id}`}>
+                  <Link href={`/detail?id=${menu.id}`}>
                     <h3 className="font-semibold text-text-primary text-sm line-clamp-2 leading-tight">{menu?.name || "Menu"}</h3>
                     <p className="text-xs text-text-secondary mt-1 line-clamp-1">{menu?.description || "Enak & Segar"}</p>
                   </Link>
